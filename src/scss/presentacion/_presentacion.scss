@@ -1,0 +1,12 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.presentacion{
+    margin-top: 5rem;
+}
+
+.presentacion__foto img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
