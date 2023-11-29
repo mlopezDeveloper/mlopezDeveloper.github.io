@@ -3,11 +3,29 @@
 
 .header{
     background-color: #565656;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.7s;
+    
+    &.barra-color{
+        background-color: #56565654
+    }
+
+    @include m.desktop { 
+        height: 5rem; 
+    }
+
+    @include m.tablet { 
+        height: 5rem;
+    }
+    
 
     &__barra{
         display: flex;
         flex-direction: column;
-        margin: 0 8rem;
+        margin: 0 2rem;
         
         @include m.tablet{
             flex-direction: row;
@@ -26,6 +44,23 @@
         }
     }
 
+    &__logo img{
+        max-width: 20%;
+
+        @include m.telefono { 
+            max-width: 13%;
+        }
+
+        @include m.tablet { 
+            max-width: 50%;
+        }
+
+        @include m.desktop { 
+            max-width: 50%;
+        }
+        
+    }
+
     &__nav-principal{
         display: flex;
         flex-direction: column;
@@ -41,7 +76,7 @@
         a{
             text-align: center;
             color: #ffffff;
-            font-size: 2rem;
+            font-size: 1.3rem;
             text-transform: uppercase;
             font-weight: 700;
             margin-bottom: 1rem;
@@ -56,7 +91,12 @@
             &:hover{
                 color: v.$secundario;
             }
+                        
+            
+
         }
     }
 
 }
+
+

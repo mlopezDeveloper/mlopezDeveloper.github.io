@@ -4,12 +4,13 @@ window.onblur = () =>
 window.onfocus = () =>
 	document.title = "Portafolio";
 
-    /*const nav = document.querySelector('barra');
+    const nav = document.querySelector('header');
 
     window.addEventListener('scroll', function () {
         if (window.scrollY > 0) {
             nav.classList.add('barra-color');
+            enlace.classList.toggle('negroo');
         } else {
             nav.classList.remove('barra-color');
         }
-    });*/
+    });
