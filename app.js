@@ -9,8 +9,8 @@ window.onfocus = () =>
     window.addEventListener('scroll', function () {
         if (window.scrollY > 0) {
             nav.classList.add('barra-color');
-            enlace.classList.toggle('negroo');
         } else {
             nav.classList.remove('barra-color');
         }
     });
+

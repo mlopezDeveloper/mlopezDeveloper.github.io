@@ -1,61 +1,90 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
-.presentacion{
-    background-image: url("../../img/fondo1.png");
-}
+
 
 .presentacion{
-    margin-top: 15rem;    
+    margin-top: 22rem;
+
+    @include m.tablet { 
+        margin-top: 10rem;
+    }
     
     &__grid{
-        
-        @include m.grid(1, 1rem);
-        grid-row: 1;
-        /*
-        grid-template-rows: repeat(2, 1fr);
-        */
-        
+        display: flex;
+        flex-direction: column-reverse;//damos vuelta la columna, y la img que esta a la derecha va hacia arriba cuando es una pantalla mas chica
+
         @include m.tablet { 
             @include m.grid(2, 1rem);
+            width: 75%;
+            //margin: 24rem auto;
         }
     }
 
     &__contenido{
         margin: auto;
         text-align: center;
+
+        @include m.desktop { 
+            border-left: v.$terciario solid 8px;
+        }
     }
 
     &__heading{
         font-size: 2.5rem;
+
         @include m.tablet { 
-            font-size: 4rem;
+            font-size: 3rem;
         }
     }
 
     &__heading span{
-        color: #fdd835;
+        color: v.$terciario;
         text-transform: uppercase;
     }
 
     &__texto{
         font-weight: 700;
+        @include m.tablet { 
+            font-size: 1.4rem;
+        }
     }
 
     &__imagen{
         margin: 0 auto;
-        //order: -1;
-        width: 40%;
+        width: 35%;
+
+        @include m.telefono { 
+            width: 45%;
+        }
 
         @include m.tablet { 
             display: grid;
             justify-content: center;
-            order: unset;
-            width: 100%;
+            //order: unset;
+            width: 75%;
+        }
+
+        @include m.desktop { 
+            display: grid;
+            justify-content: center;
+            width: 70%;
         }
     }
     &__imagen img{
         border-radius: 100%;
     }
+}
+
+.linkeding:hover{
+    color: #0a66c2;
+}
+
+.cv:hover{
+    color: #7d7b72;
+}
+
+.github:hover{
+    color: #78268a;
 }
 
 
