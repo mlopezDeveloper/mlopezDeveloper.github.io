@@ -8,17 +8,10 @@
     left: 0;
     width: 100%;
     transition: 0.7s;
+    z-index: 2;
     
     &.barra-color{
         background-color: #56565654
-    }
-
-    @include m.desktop { 
-        height: 5rem; 
-    }
-
-    @include m.tablet { 
-        height: 5rem;
     }
 
     &__barra{

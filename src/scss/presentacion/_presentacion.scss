@@ -16,7 +16,6 @@
         @include m.tablet { 
             @include m.grid(2, 1rem);
             width: 75%;
-            //margin: 24rem auto;
         }
     }
 
@@ -31,6 +30,8 @@
 
     &__heading{
         font-size: 2.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
 
         @include m.tablet { 
             font-size: 3rem;
@@ -39,11 +40,11 @@
 
     &__heading span{
         color: v.$terciario;
-        text-transform: uppercase;
     }
 
     &__texto{
-        font-weight: 700;
+        text-transform: uppercase;
+        color: #555;
         @include m.tablet { 
             font-size: 1.4rem;
         }
@@ -60,7 +61,6 @@
         @include m.tablet { 
             display: grid;
             justify-content: center;
-            //order: unset;
             width: 75%;
         }
 
@@ -72,6 +72,7 @@
     }
     &__imagen img{
         border-radius: 100%;
+        z-index: 1;
     }
 }
 
@@ -87,6 +88,10 @@
     color: #78268a;
 }
 
+.waves{
+    position: relative;
+    top: -228px;
+}
 
 
 
