@@ -1,89 +1,88 @@
-@use 'base/mixins' as m;
-@use 'base/variables' as v;
+@use "base/mixins" as m;
+@use "base/variables" as v;
 
-.header{
-    background-color: v.$primario;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: 0.7s;
-    z-index: 2;
-    
-    &.barra-color{
-        background-color: #56565654
+.header {
+  background-color: v.$primario;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.7s;
+  z-index: 1000;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+
+  &.barra-color {
+    background-color: #56565654;
+  }
+
+  &__barra {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+
+    @include m.tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+
+    @include m.tablet {
+      margin: 0;
+    }
+  }
+
+  &__logo img {
+    max-width: 20%;
+
+    @include m.telefono {
+      max-width: 13%;
     }
 
-    &__barra{
-        display: flex;
-        flex-direction: column;
-        margin: 0 2rem;
-        
-        @include m.tablet{
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
+    @include m.tablet {
+      max-width: 50%;
     }
 
-    &__logo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem;
+    @include m.desktop {
+      max-width: 50%;
+    }
+  }
 
-        @include m.tablet { 
-            margin: 0;
-        }
+  &__nav-principal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    @include m.tablet {
+      flex-direction: row;
+      gap: 3rem;
+      margin-top: 0;
     }
 
-    &__logo img{
-        max-width: 20%;
+    a {
+      text-align: center;
+      color: v.$blanco;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      @include m.tablet {
+        margin-bottom: 0;
+      }
 
-        @include m.telefono { 
-            max-width: 13%;
-        }
+      &.activo {
+        color: v.$quinario;
+      }
 
-        @include m.tablet { 
-            max-width: 50%;
-        }
-
-        @include m.desktop { 
-            max-width: 50%;
-        }
+      &:hover {
+        color: v.$quinario;
+      }
     }
-
-    &__nav-principal{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-
-        @include m.tablet {
-            flex-direction: row;
-            gap: 3rem;
-            margin-top: 0;
-        }
-
-        a{
-            text-align: center;
-            color: v.$blanco;
-            font-size: 1.3rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            @include m.tablet { 
-                margin-bottom: 0;
-            }
-
-            &.activo{
-                color: v.$quinario;
-            }
-
-            &:hover{
-                color: v.$quinario;
-            }
-        }
-    }
+  }
 }
-
-

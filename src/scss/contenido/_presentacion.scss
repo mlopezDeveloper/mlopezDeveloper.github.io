@@ -1,0 +1,104 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.presentacion {
+  padding-top: 22rem;
+  height: 519px;
+  //background-image: url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+
+  @include m.tablet {
+    padding-top: 10rem;
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column-reverse; //damos vuelta la columna, y la img que esta a la derecha va hacia arriba cuando es una pantalla mas chica
+
+    @include m.tablet {
+      @include m.grid(2, 1rem);
+      width: 75%;
+    }
+  }
+
+  &__contenido {
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+
+    @include m.desktop {
+      border-left: v.$terciario solid 8px;
+    }
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @include m.tablet {
+      font-size: 3rem;
+    }
+  }
+
+  &__heading span {
+    color: v.$terciario;
+  }
+
+  &__texto {
+    text-transform: uppercase;
+    color: #555;
+
+    @include m.tablet {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__imagen {
+    margin: 0 auto;
+    width: 35%;
+
+    @include m.telefono {
+      width: 45%;
+    }
+
+    @include m.tablet {
+      display: grid;
+      justify-content: center;
+      width: 75%;
+    }
+
+    @include m.desktop {
+      display: grid;
+      justify-content: center;
+      width: 70%;
+    }
+  }
+
+  &__imagen img {
+    border-radius: 100%;
+    z-index: 1;
+  }
+}
+
+.linkeding:hover {
+  color: #0a66c2;
+}
+
+.cv:hover {
+  color: #7d7b72;
+}
+
+.github:hover {
+  color: #78268a;
+}
+
+.waves {
+  position: relative;
+  top: -228px;
+}
