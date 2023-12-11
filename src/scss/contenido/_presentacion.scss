@@ -3,15 +3,13 @@
 
 .presentacion {
   padding-top: 22rem;
-  height: 519px;
-  //background-image: url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+  height: 628px;
   background: linear-gradient(
       to right,
-      rgba(245, 245, 245, 0.8),
-      rgba(245, 245, 245, 0.8)
+      rgba(245, 245, 245, 0.6),
+      rgba(245, 245, 245, 0.6)
     ),
     url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
-
   @include m.tablet {
     padding-top: 10rem;
   }
@@ -83,6 +81,7 @@
   &__imagen img {
     border-radius: 100%;
     z-index: 1;
+    border-right: 9px solid slategrey;
   }
 }
 
@@ -98,7 +97,31 @@
   color: #78268a;
 }
 
-.waves {
-  position: relative;
-  top: -228px;
+.frase {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 8rem;
+  letter-spacing: 2px;
+}
+
+.lenguajes {
+  width: 3%;
+  position: absolute;
+  z-index: 10;
+}
+
+.html {
+  top: 11rem;
+  right: 49rem;
+}
+
+.css {
+  right: 25rem;
+  top: 35rem;
+}
+
+.js {
+  right: 49rem;
+  top: 39rem;
+  width: 4%;
 }
