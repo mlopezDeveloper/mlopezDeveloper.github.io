@@ -4,6 +4,7 @@
 .presentacion {
   padding-top: 22rem;
   height: 628px;
+  border-bottom: #dddddd solid 1px;
   background: linear-gradient(
       to right,
       rgba(245, 245, 245, 0.6),
@@ -82,6 +83,11 @@
     border-radius: 100%;
     z-index: 1;
     border-right: 9px solid slategrey;
+    /*&:hover {
+      filter: grayscale(100%);
+      cursor: pointer;
+      scale: 1.1;
+    }*/
   }
 }
 

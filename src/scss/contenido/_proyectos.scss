@@ -1,0 +1,39 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.proyectos {
+  &__heading {
+    text-align: center;
+  }
+
+  &__grid {
+    text-align: center;
+    @include m.grid(3, 2rem);
+  }
+}
+
+.proyecto {
+  &__imagen {
+    aspect-ratio: 10/4.5;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+
+  @for $i from 1 through 9 {
+    //se va a ejecutar 6 veces
+    $imagen: "../img/proyecto_" + $i + ".jpg";
+    &:nth-child(#{$i}) &__imagen {
+      background-image: linear-gradient(
+          to bottom,
+          transparentize(v.$negro, 1%) 0%,
+          transparentize(v.$negro, 0.3%) 100%
+        ),
+        url($imagen);
+    }
+  }
+
+  &__nombre {
+    color: v.$blanco;
+  }
+}
