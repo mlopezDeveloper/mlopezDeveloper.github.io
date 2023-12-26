@@ -3,7 +3,7 @@
 
 .minformacion {
   //padding-top: 5rem 0;
-  height: 1050px;
+  height: 1200px;
   background-color: white;
   margin: 5rem;
   padding: 5rem;
@@ -98,4 +98,45 @@
   position: absolute;
   top: 0px;
   width: 20px;
+}
+
+.habilidades {
+  position: relative;
+  top: 5rem;
+  text-align: center;
+
+  &__grid {
+    //display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+    @include m.grid(2, 5rem);
+    //grid-gap: 10rem;
+    position: relative;
+    top: 5rem;
+  }
+
+  &__titulo {
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  &__skills {
+    @include m.grid(4, 1rem);
+    position: relative;
+    top: 2rem;
+  }
+}
+
+.skills__skill {
+  background: hsl(0deg 0% 60% / 20%);
+  border-radius: 5px;
+  color: #666;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  &:hover {
+    color: v.$primario;
+    transform: scale(1.1); /*se agranda al pasar el cursor*/
+    background-size: 30rem;
+  }
 }
