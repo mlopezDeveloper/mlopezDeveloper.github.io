@@ -3,7 +3,7 @@
 
 .minformacion {
   //padding-top: 5rem 0;
-  height: 746px;
+  height: 1050px;
   background-color: white;
   margin: 5rem;
   padding: 5rem;
@@ -81,7 +81,7 @@
 
 .experiencia-laboral::before {
   content: ""; //no vamos agregar contenido significa
-  background: v.$secundario;
+  background: v.$quinario;
   height: 284%;
   position: absolute;
   top: -91%;
@@ -90,7 +90,7 @@
 }
 
 .experiencia-laboral::after {
-  background: v.$secundario;
+  background: v.$quinario;
   border-radius: 100%;
   content: "";
   height: 20px;
