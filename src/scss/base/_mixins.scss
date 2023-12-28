@@ -58,10 +58,10 @@
   background-position: top center;
 }
 
-@mixin headingBorder($colorTexto, $colorLinea) {
-  font-size: 3.6rem;
+@mixin headingBorder($colorTexto, $colorLinea, $fontSise, $marginTop) {
+  font-size: $fontSise;
   display: inline-block; //corta donde finaliza el contenido H2
-  margin-top: 5rem;
+  margin-top: $marginTop;
   color: $colorTexto;
 
   @include tablet {
@@ -73,7 +73,8 @@
     content: "";
     background-color: $colorLinea;
     height: 1rem;
-    width: calc(100% + 2rem);
+    //width: calc(100% + 2rem);
+    //width: 100%;
     display: block;
     margin: -1.4rem 0 0 0;
   }

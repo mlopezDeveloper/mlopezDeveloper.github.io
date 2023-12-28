@@ -10,25 +10,48 @@
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 
   &__heading {
+    display: block;
     position: relative;
-    top: 3rem;
+    top: 0;
     color: v.$negro;
     text-transform: uppercase;
-    @include m.headingBorder(v.$negro, v.$quinario);
+    @include m.headingBorder(v.$negro, v.$quinario, 2.6rem, 0);
+
+    @include m.tablet {
+      top: 3rem;
+      @include m.headingBorder(v.$negro, v.$quinario, 3.6rem, 5rem);
+    }
+
+    @include m.desktop {
+      top: 3rem;
+      @include m.headingBorder(v.$negro, v.$quinario, 3.6rem, 5rem);
+    }
+
+    &::after {
+      @include m.tablet {
+        width: calc(100% + 2rem);
+      }
+    }
   }
 
   &__contenido {
     position: relative;
-    top: 5rem;
+    top: 1rem;
     background-color: #ffffff5c;
     border-radius: 3%;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    letter-spacing: 1px;
+
+    @include m.tablet {
+      top: 5rem;
+      margin-left: 15rem;
+      margin-right: 15rem;
+      letter-spacing: 1px;
+    }
   }
 
   &__texto {
-    text-align: justify;
+    @include m.tablet {
+      text-align: justify;
+    }
   }
 
   &__grid {
@@ -106,10 +129,7 @@
   text-align: center;
 
   &__grid {
-    //display: grid;
-    //grid-template-columns: repeat(2, 1fr);
     @include m.grid(2, 5rem);
-    //grid-gap: 10rem;
     position: relative;
     top: 5rem;
   }

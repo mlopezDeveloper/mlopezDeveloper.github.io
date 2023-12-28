@@ -3,7 +3,7 @@
 
 .presentacion {
   padding-top: 22rem;
-  height: 628px;
+  height: 740px;
   border-bottom: #dddddd solid 1px;
   background: linear-gradient(
       to right,
@@ -13,6 +13,11 @@
     url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
   @include m.tablet {
     padding-top: 10rem;
+    height: 550px;
+  }
+
+  @include m.desktop {
+    height: 600px;
   }
 
   &__grid {
@@ -36,12 +41,16 @@
   }
 
   &__heading {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 
     @include m.tablet {
-      font-size: 3rem;
+      font-size: 2.5rem;
+    }
+
+    @include m.desktop {
+      font-size: 2.5rem;
     }
   }
 
@@ -52,9 +61,15 @@
   &__texto {
     text-transform: uppercase;
     color: #555;
+    margin: 3rem 0;
 
     @include m.tablet {
       font-size: 1.4rem;
+      margin: 2rem 0;
+    }
+
+    @include m.desktop {
+      margin: 2rem 0;
     }
   }
 
@@ -122,31 +137,18 @@
 .frase {
   text-align: center;
   text-transform: uppercase;
-  margin-top: 8rem;
+  margin-top: 4rem;
   letter-spacing: 2px;
+
+  @include m.tablet {
+    margin-top: 6rem;
+  }
+
+  @include m.desktop {
+    margin-top: 8rem;
+  }
 }
 
-.lenguajes {
-  width: 3%;
-  position: absolute;
-  z-index: 10;
-}
-
-.html {
-  top: 11rem;
-  right: 49rem;
-}
-
-.css {
-  right: 25rem;
-  top: 35rem;
-}
-
-.js {
-  right: 49rem;
-  top: 39rem;
-  width: 4%;
-}
 .social-card {
   height: fit-content;
   width: fit-content;
