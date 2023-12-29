@@ -10,7 +10,7 @@
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 
   @include m.tablet {
-    height: 1100px;
+    height: 1600px;
     margin: 5rem;
     padding: 5rem;
   }
@@ -141,11 +141,11 @@
   font-size: 12px;
 }
 
-.experiencia-laboral:first-child {
+.experiencias__laboral:first-child {
   margin-top: 0;
 }
 
-.experiencia-laboral::before {
+.experiencias__laboral::before {
   content: ""; //no vamos agregar contenido significa
   background: v.$quinario;
   height: 150%;
@@ -155,7 +155,7 @@
   width: 3px;
 }
 
-.experiencia-laboral::after {
+.experiencias__laboral::after {
   background: v.$quinario;
   border-radius: 100%;
   content: "";
@@ -171,13 +171,17 @@
   top: 5rem;
   text-align: center;
 
+  @include m.tablet {
+    top: 0;
+  }
+
   &__grid {
     @include m.grid(1, 5rem);
     position: relative;
     top: 5rem;
 
     @include m.tablet {
-      @include m.grid(2, 5rem);
+      @include m.grid(1, 5rem);
     }
 
     @include m.desktop {
@@ -188,8 +192,9 @@
   &__imagen img {
     display: inline-block;
     max-width: 80%;
+
     @include m.tablet {
-      max-width: 100%;
+      max-width: 60%;
     }
 
     @include m.desktop {

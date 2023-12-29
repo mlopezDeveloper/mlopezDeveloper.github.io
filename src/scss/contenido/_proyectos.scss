@@ -8,17 +8,27 @@
 
   &__grid {
     text-align: center;
+
     @include m.grid(1, 2rem);
 
     @include m.tablet {
+      @include m.grid(2, 2rem);
+    }
+
+    @include m.desktop {
       @include m.grid(3, 2rem);
     }
   }
 }
 
 .proyecto {
+  &__contenido {
+    margin: 0;
+    position: relative;
+  }
+
   &__imagen {
-    aspect-ratio: 10/4.5;
+    aspect-ratio: 8/4.5;
     background-size: 100%;
     position: relative;
     background-repeat: no-repeat;
