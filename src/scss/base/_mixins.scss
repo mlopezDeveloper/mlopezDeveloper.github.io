@@ -60,7 +60,7 @@
 
 @mixin headingBorder($colorTexto, $colorLinea, $fontSise, $marginTop) {
   font-size: $fontSise;
-  display: inline-block; //corta donde finaliza el contenido H2
+  //display: inline-block; //corta donde finaliza el contenido H2
   margin-top: $marginTop;
   color: $colorTexto;
 
@@ -73,9 +73,7 @@
     content: "";
     background-color: $colorLinea;
     height: 1rem;
-    //width: calc(100% + 2rem);
-    //width: 100%;
     display: block;
-    margin: -1.4rem 0 0 0;
+    margin: -1.4rem 40px 0;
   }
 }
