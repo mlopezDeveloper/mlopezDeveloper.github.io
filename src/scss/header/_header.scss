@@ -25,6 +25,12 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    @include m.desktop {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__logo {
@@ -36,14 +42,14 @@
     @include m.tablet {
       margin: 0;
     }
+
+    @include m.desktop {
+      margin: 0;
+    }
   }
 
   &__logo img {
-    max-width: 20%;
-
-    @include m.telefono {
-      max-width: 13%;
-    }
+    max-width: 15%;
 
     @include m.tablet {
       max-width: 50%;
@@ -65,6 +71,12 @@
       margin-top: 0;
     }
 
+    @include m.desktop {
+      flex-direction: row;
+      gap: 3rem;
+      margin-top: 0;
+    }
+
     a {
       text-align: center;
       color: v.$blanco;
@@ -73,6 +85,10 @@
       font-weight: 700;
       margin-bottom: 1rem;
       @include m.tablet {
+        margin-bottom: 0;
+      }
+
+      @include m.desktop {
         margin-bottom: 0;
       }
 

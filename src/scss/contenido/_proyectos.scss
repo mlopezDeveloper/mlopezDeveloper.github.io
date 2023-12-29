@@ -8,7 +8,11 @@
 
   &__grid {
     text-align: center;
-    @include m.grid(3, 2rem);
+    @include m.grid(1, 2rem);
+
+    @include m.tablet {
+      @include m.grid(3, 2rem);
+    }
   }
 }
 

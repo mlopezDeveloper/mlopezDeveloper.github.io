@@ -11,12 +11,14 @@
       rgba(245, 245, 245, 0.6)
     ),
     url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+
   @include m.tablet {
     padding-top: 10rem;
     height: 550px;
   }
 
   @include m.desktop {
+    padding-top: 10rem;
     height: 600px;
   }
 
@@ -25,6 +27,11 @@
     flex-direction: column-reverse; //damos vuelta la columna, y la img que esta a la derecha va hacia arriba cuando es una pantalla mas chica
 
     @include m.tablet {
+      @include m.grid(2, 1rem);
+      width: 75%;
+    }
+
+    @include m.desktop {
       @include m.grid(2, 1rem);
       width: 75%;
     }
@@ -69,6 +76,7 @@
     }
 
     @include m.desktop {
+      font-size: 1.4rem;
       margin: 2rem 0;
     }
   }

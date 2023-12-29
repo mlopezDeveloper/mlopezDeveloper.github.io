@@ -2,17 +2,17 @@
 
 /** Media Queries **/
 @mixin telefono {
-  @media (min-width: v.$telefono) {
+  @media screen and (max-width: v.$telefono) {
     @content;
   }
 }
 @mixin tablet {
-  @media (min-width: v.$tablet) {
+  @media screen and (min-width: v.$tablet) and (max-width: v.$tablet_max) {
     @content;
   }
 }
 @mixin desktop {
-  @media (min-width: v.$desktop) {
+  @media screen and (min-width: v.$desktop) {
     @content;
   }
 }
@@ -64,10 +64,10 @@
   margin-top: $marginTop;
   color: $colorTexto;
 
-  @include tablet {
+  /*@include tablet {
     //como estamos en el mismo archivo que el mixins no es necesario el m.
-    margin-top: 0;
-  }
+    margin-top: $marginTop;
+  }*/
 
   &::after {
     content: "";
@@ -75,5 +75,15 @@
     height: 1rem;
     display: block;
     margin: -1.4rem 40px 0;
+
+    @include tablet {
+      width: calc(100% + 2rem);
+      margin: -1.4rem 0 0 0;
+    }
+
+    @include desktop {
+      width: calc(100% + 2rem);
+      margin: -1.4rem 0 0 0;
+    }
   }
 }
