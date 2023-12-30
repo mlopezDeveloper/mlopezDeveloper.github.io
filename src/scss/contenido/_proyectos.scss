@@ -34,6 +34,12 @@
     background-repeat: no-repeat;
   }
 
+  &__heading {
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
   @for $i from 1 through 9 {
     //se va a ejecutar 6 veces
     $imagen: "../img/proyecto_" + $i + ".jpg";
@@ -50,4 +56,13 @@
   &__nombre {
     color: v.$blanco;
   }
+}
+
+figcaption {
+  opacity: 1;
+  position: relative;
+  bottom: 0;
+  padding: 10px 0 10px 0;
+  background: rgba(255, 255, 255, 1);
+  z-index: 2;
 }
