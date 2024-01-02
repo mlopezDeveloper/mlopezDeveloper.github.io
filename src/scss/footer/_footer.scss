@@ -5,7 +5,10 @@
   &__contenedor {
     //border-top: 1px solid black;
     background-color: #d1d1d199;
-    padding: 1rem 2rem;
+    padding: 1rem 5rem;
+    @include m.desktop {
+      padding: 1rem 10rem;
+    }
 
     p {
       font-size: 1.3rem;
@@ -18,4 +21,28 @@
     font-size: 10px;
     padding: 10px;
   }
+
+  &__grid {
+    @include m.grid(1, 2rem);
+    @include m.desktop {
+      @include m.grid(2, 2rem);
+    }
+  }
+
+  &__redes {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__p {
+    text-align: center;
+  }
+}
+
+.whatsapp:hover {
+  color: #0dc043;
+}
+
+.email:hover {
+  color: rgb(214 71 64);
 }
