@@ -49,14 +49,15 @@
   }
 
   &__logo img {
-    max-width: 15%;
+    max-width: 60%;
+    width: 6rem;
 
     @include m.tablet {
       max-width: 50%;
     }
 
     @include m.desktop {
-      max-width: 50%;
+      max-width: 100%;
     }
   }
 
