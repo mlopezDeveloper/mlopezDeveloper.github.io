@@ -53,7 +53,8 @@
     width: 6rem;
 
     @include m.tablet {
-      max-width: 50%;
+      max-width: 100%;
+      width: 5rem;
     }
 
     @include m.desktop {
@@ -102,4 +103,7 @@
       }
     }
   }
+}
+
+.mobile-accordion-men {
 }
