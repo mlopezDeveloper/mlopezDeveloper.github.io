@@ -1,6 +1,6 @@
 let baslik = document.title;
 window.onblur = () => (document.title = "Te sigo viendo...");
-window.onfocus = () => (document.title = "Portafolio");
+window.onfocus = () => (document.title = "MLopez | Portafolio 🧑‍💻");
 
 /*const nav = document.querySelector('header');
 
