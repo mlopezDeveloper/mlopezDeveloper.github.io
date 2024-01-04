@@ -2,7 +2,7 @@
 @use "base/variables" as v;
 
 .header {
-  background-color: blue; //v.$primario;
+  background-color: v.$primario;
   position: fixed;
   top: 0;
   left: 0;
