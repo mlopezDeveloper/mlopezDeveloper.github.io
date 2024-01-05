@@ -17,6 +17,12 @@
 
   @include m.desktop {
     height: 1100px;
+    margin: 4rem;
+    padding: 4rem;
+  }
+
+  @include m.desktopXL {
+    height: 1100px;
     margin: 5rem;
     padding: 5rem;
   }
@@ -54,6 +60,12 @@
     }
 
     @include m.desktop {
+      top: 5rem;
+      margin: 0 5rem;
+      letter-spacing: 1px;
+    }
+
+    @include m.desktopXL {
       top: 5rem;
       margin: 0 15rem;
       letter-spacing: 1px;
