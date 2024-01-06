@@ -64,6 +64,10 @@
     position: fixed;
     left: -150%;
 
+    span {
+      color: #afafbc;
+    }
+
     @include m.tablet {
       flex-direction: row;
       gap: 3rem;
