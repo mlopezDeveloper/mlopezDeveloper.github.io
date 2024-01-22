@@ -1,4 +1,4 @@
-let baslik = document.title;
+//let baslik = document.title;
 window.onblur = () => (document.title = "Te sigo viendo...");
 window.onfocus = () => (document.title = "MLopez | Portafolio 🧑‍💻");
 
