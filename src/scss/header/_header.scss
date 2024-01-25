@@ -125,6 +125,7 @@
   .checkbtn {
     display: block;
   }
+
   .menu-icon {
     display: block;
     position: fixed;
@@ -139,7 +140,7 @@
   }*/
 }
 
-#check:checked ~ nav {
+#check:checked~nav {
   flex-direction: column;
   position: static;
   margin-top: 1rem;

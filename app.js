@@ -32,3 +32,19 @@ const typed = new Typed(".typed", {
   cursorChar: "|", // Caracter para el cursor
   contentType: "html", // 'html' o 'null' para texto sin formato
 }); //nueva instancia de Typed(); //clase typed
+
+function cambiarSeleccion(element) {
+  element.classList.add("activo");
+
+  // Eliminamos la clase seleccionado de los otros menús
+  var otrosMenu = document.querySelectorAll(".header__nav-principal a");
+  otrosMenu.forEach(function (menu) {
+    if (menu != element) {
+      menu.classList.remove("activo");
+    }
+  });
+}
+
+document.addEventListener("click", function (event) {
+  cambiarSeleccion(event.target);
+});
