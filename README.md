@@ -1,6 +1,7 @@
 # Portafolio v.1.0.0
 
-https://img.shields.io/badge/HTML-orange
+![Static Badge](https://img.shields.io/badge/HTML-orange)
+
 
 [![CSS](https://img.shields.io/badge/CSS-0453FB?style=for-the-badge&labelColor=101010)]() 
 [![SASS](https://img.shields.io/badge/SASS-ed9de8?style=for-the-badge&labelColor=101010)]() 
