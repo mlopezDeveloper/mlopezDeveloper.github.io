@@ -57,7 +57,7 @@
 
   @for $i from 1 through 9 {
     //se va a ejecutar 6 veces
-    $imagen: "../img/proyecto_" + $i + ".jpg";
+    $imagen: "../img/proyecto_" + $i + ".png";
     &:nth-child(#{$i}) &__imagen {
       background-image: linear-gradient(
           to bottom,
