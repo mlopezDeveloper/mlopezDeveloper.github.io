@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: v.$fuentePrincipal;
+    font-family: v.$fuenteSecundaria;//v.$fuentePrincipal;
     font-size: 1.6rem;
     background-color: darken(v.$grisClaro, 3%);
 }

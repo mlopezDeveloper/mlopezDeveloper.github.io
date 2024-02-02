@@ -66,7 +66,19 @@
         ),
         url($imagen);
     }
+
+    &:nth-child(#{$i}) &__imagen:hover {
+      background-image: linear-gradient(
+          to bottom,
+          transparentize(v.$negro, 1%) 0%,
+          transparentize(rgba(0, 0, 0, 0), 0%) 0%
+        ),
+        url($imagen);
+        //cursor: url("../img/arrows-fullscreen.svg")0 0, pointer;
+    }
   }
+
+
 
   &:nth-child(4) {
     .proyecto__width {
