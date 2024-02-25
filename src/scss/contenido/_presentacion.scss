@@ -3,7 +3,7 @@
 
 .presentacion {
   padding-top: 10rem;
-  height: 770px;
+  height: 650px;
   border-bottom: #dddddd solid 1px;
   background: linear-gradient(
       to right,
@@ -150,15 +150,15 @@
 .frase {
   text-align: center;
   text-transform: uppercase;
-  margin-top: 4rem;
+  //margin-top: 2rem;
   letter-spacing: 2px;
 
-  @include m.tablet {
-    margin-top: 6rem;
-  }
+/*@include m.tablet {
+    margin-top: 4rem;
+  }*/
 
   @include m.desktop {
-    margin-top: 8rem;
+    padding-top: 2rem;
   }
 }
 

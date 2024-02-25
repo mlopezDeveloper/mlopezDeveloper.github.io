@@ -95,7 +95,7 @@
       <p class="frase">Una buena UX es la que no te genera una pregunta.</p>
     </section>
     <section id="sobremi" class="minformacion">
-      <h2 class="minformacion__heading">Sobre mí</h2>
+      <h1 class="minformacion__heading">Sobre mí</h1>
       <div class="minformacion__contenido">
         <p class="minformacion__texto">
           <strong>Programador de bases de datos</strong>
@@ -125,16 +125,11 @@
             </p>
           </div>
           <div class="experiencias">
-            <h1 class="experiencias__heading">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                class="bi bi-person-workspace" viewBox="0 0 16 16" style="color: black">
-                <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
-                <path
-                  d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z" />
-              </svg>
+            <h2 class="experiencias__heading">
               Experiencia Laboral
-            </h1>
-            <div class="experiencias__laboral">
+            </h2>
+
+            <!--<div class="experiencias__laboral">
               <h3 class="empresa">SISTRAN Consultores</h3>
               <p class="posicion">Programador de software</p>
               <p class="fecha">2019 - 2021</p>
@@ -143,7 +138,59 @@
               <h3 class="empresa">CNP Seguros</h3>
               <p class="posicion">Analista de sistemas - IT</p>
               <p class="fecha">2021 - presente</p>
-            </div>
+            </div>-->
+            <ol class="experienceList">
+              <li class="experienceItemList">
+                <div class="decorativeCircleList"></div>
+                <time datetime="2023-05">2019 - 2021</time>
+                <h3>Programador de software</h3>
+                <p>
+                  Desarrollo, actualización y mantenimiento de aplicaciones orientados al negocio de seguros utilizando las siguientes tecnologías:
+                  Visual Basic 6.0, SQL server, Crystal Reports
+                </p>
+                <a href="https://www.sistran.com/latam/es/inicio/">
+                  SISTRAN Consultores
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="experienceItemList">
+                <div class="decorativeCircleList"></div>
+                <time datetime="2023-05">2021 - Actualmente</time>
+                <h3>Analista de sistemas - IT</h3>
+                <p>
+                  Analista programador senior de sistemas centrales (Sise) realizando tareas de mantenimiento, mejoras e evolutivos 
+                  utilizando metodología SCRUM y tecnologias Visual Basic 6, SQL Server, Talend Open Studio, Reporting Services.
+                </p>
+                <a href="https://www.cnp.seg.ar/">
+                  CNP Seguros
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ol>
           </div> 
         </div> 
         <div class="habilidades">
@@ -354,7 +401,7 @@
     <div class="footer__contenedor">
       <div class="footer__grid">
         <div class="footer__p">
-          <img src="build/img/logo_original.png" alt="imagen logo">
+          <img loading="lazy" src="build/img/logo_original.png" alt="imagen logo">
           <p> 2024 | MLOPEZ | V1.0</p>
         </div>
         <div class="footer__redes">
@@ -382,7 +429,6 @@
         </div>
       </div>
     </div>
-
     <div class="footer__frase">
       © 2023 PORTAFOLIO POR MLOPEZ. DESARROLLANDO MIS SUEÑOS DESDE ARGENTINA -
       BUENOS AIRES

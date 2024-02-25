@@ -110,18 +110,20 @@
   display: flex;
   flex-direction: column;
   //justify-content: center;
-
+  
   &__heading {
     font-size: 2.6rem;
     text-align: center;
-    color: v.$primario;
+    //color: v.$primario;
+    color: v.$negro;
+    text-transform: uppercase;
 
     @include m.tablet {
       text-align: left;
     }
   }
 
-  &__laboral {
+  /*&__laboral {
     position: relative;
     height: 100px;
     margin: 5rem 5rem 0rem 5rem;
@@ -133,10 +135,10 @@
     @include m.desktop {
       margin: 5rem 0 0 10rem;
     }
-  }
+  }*/
 }
 
-.empresa {
+/*.empresa {
   font-size: 18px;
   font-weight: bold;
   &:hover {
@@ -176,7 +178,7 @@
   position: absolute;
   top: 0px;
   width: 20px;
-}
+}*/
 
 .habilidades {
   position: relative;
@@ -249,3 +251,58 @@
   }
 }
 
+.experienceList {
+  border-inline-start: 1px solid rgb(2, 2, 2);
+  position: relative;
+}
+.experienceItemList {
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+.experienceItemList time {
+  color: rgba(62, 61, 61, 0.639);
+}
+
+.experienceItemList h3 {
+  color: #78268a;
+  font-size: var(--ExperienciaTitleSize);
+  text-wrap: pretty;
+  text-transform: uppercase;
+}
+
+.experienceItemList p {
+  color: rgb(0, 0, 0);
+  margin: 0 0 30px 0;
+  font-size: var(--ExperienceParagraphSixe);
+}
+
+.experienceItemList a {
+  background-color: rgba(109, 100, 100, 0.216);
+  padding: 10px 25px;
+  border-radius: 10px;
+
+  font-weight: 700;
+  color: black;
+
+  width: max-content;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.experienceItemList a:hover {
+  color: rgb(0, 64, 105);
+}
+
+
+.decorativeCircleList {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+
+  left: -5px;
+  margin-top: 7px;
+}
