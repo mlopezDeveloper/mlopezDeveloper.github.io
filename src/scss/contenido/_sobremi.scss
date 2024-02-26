@@ -22,13 +22,14 @@
   }
 
   @include m.desktopXL {
-    height: 1100px;
+    height: 1240px;
     margin: 5rem;
     padding: 5rem;
   }
 
   &__heading {
     position: relative;
+    text-align: center;
     top: 0;
     color: v.$negro;
     text-transform: uppercase;
@@ -306,3 +307,27 @@
   left: -5px;
   margin-top: 7px;
 }
+
+.brands-list {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 15rem;
+  justify-items: stretch;
+  width: calc(7.5 * 15rem); /* Adjust as needed */
+  animation: scroll 20s linear infinite forwards; /* Key changes here */
+  gap: 2rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-7.5 * 15rem));
+  }
+}
+
