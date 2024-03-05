@@ -3,26 +3,26 @@
 
 .minformacion {
   //padding-top: 5rem 0;
-  height: 190rem;
+  height:auto;
   background-color: white;
   margin: 3rem;
   padding: 3rem;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 
   @include m.tablet {
-    height: 1600px;
+    //height: 1500px;
     margin: 5rem;
     padding: 5rem;
   }
 
   @include m.desktop {
-    height: 1100px;
+    //height: 1400px;
     margin: 4rem;
     padding: 4rem;
   }
 
   @include m.desktopXL {
-    height: 1240px;
+    //height: 1240px;
     margin: 5rem;
     padding: 5rem;
   }
@@ -107,50 +107,48 @@
   text-align: center;
 }
 
-.experienceList {
-  border-inline-start: 1px solid rgb(2, 2, 2);
-  position: relative;
+.experiencias{
+  &__list {
+    border-inline-start: 1px solid rgb(2, 2, 2);
+    position: relative;
+  }
+  &__ItemList {
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+  
+  &__ItemList time {
+    color: rgba(62, 61, 61, 0.639);
+  }
+  
+  &__ItemList h3 {
+    color: #78268a;
+    font-size: var(--ExperienciaTitleSize);
+    text-wrap: pretty;
+    text-transform: uppercase;
+  }
+  
+  &__ItemList p {
+    color: rgb(0, 0, 0);
+    margin: 0 0 30px 0;
+    font-size: var(--ExperienceParagraphSixe);
+  }
+  
+  &__ItemList a {
+    background-color: rgba(109, 100, 100, 0.216);
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: black;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  &__ItemList a:hover {
+    color: rgb(0, 64, 105);
+  }
 }
-.experienceItemList {
-  padding-left: 20px;
-  padding-bottom: 40px;
-}
-
-.experienceItemList time {
-  color: rgba(62, 61, 61, 0.639);
-}
-
-.experienceItemList h3 {
-  color: #78268a;
-  font-size: var(--ExperienciaTitleSize);
-  text-wrap: pretty;
-  text-transform: uppercase;
-}
-
-.experienceItemList p {
-  color: rgb(0, 0, 0);
-  margin: 0 0 30px 0;
-  font-size: var(--ExperienceParagraphSixe);
-}
-
-.experienceItemList a {
-  background-color: rgba(109, 100, 100, 0.216);
-  padding: 10px 25px;
-  border-radius: 10px;
-
-  font-weight: 700;
-  color: black;
-
-  width: max-content;
-
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.experienceItemList a:hover {
-  color: rgb(0, 64, 105);
-}
-
 
 .decorativeCircleList {
   height: 10px;
@@ -158,35 +156,53 @@
   background-color: rgb(0, 0, 0);
   border-radius: 50%;
   position: absolute;
-
   left: -5px;
   margin-top: 7px;
 }
 
-.brands-list {
-  overflow: hidden;
+.habilidades{
+  &__heading{
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  &__habilidad{
+    display: grid;
+  /* @include m.grid(4, 1rem);
+    width: 26rem;*/
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+        69px,
+        1fr
+      )
+    );
+    padding: 3rem 0;
+
+    /*@include m.tablet {
+      @include m.grid(12, 1rem);
+      width: 70rem;
+    }
+
+    @include m.desktop {
+      @include m.grid(12, 1rem);
+      width: 83rem;
+    }
+
+    @include m.desktopXL {
+      @include m.grid(12, 1rem);
+      width: 84.2rem;
+    }
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 0;
+    width: 26rem;*/
+  }
 }
 
-.wrapper {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 15rem;
-  gap: 2rem;
-  justify-items: stretch;
-  width: calc(10 * 15rem); /* Adjust as needed */
-  //animation: scroll 20s linear infinite forwards; /* Key changes here */
-  animation-name: scroll;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  
-}
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-10 * 15rem));
-  }
-}
+
+
 
