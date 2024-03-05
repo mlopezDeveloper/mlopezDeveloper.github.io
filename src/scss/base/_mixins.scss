@@ -60,14 +60,8 @@
 
 @mixin headingBorder($colorTexto, $colorLinea, $fontSise, $marginTop) {
   font-size: $fontSise;
-  //display: inline-block; //corta donde finaliza el contenido H2
   margin-top: $marginTop;
   color: $colorTexto;
-
-  /*@include tablet {
-    //como estamos en el mismo archivo que el mixins no es necesario el m.
-    margin-top: $marginTop;
-  }*/
 
   &::after {
     content: "";
