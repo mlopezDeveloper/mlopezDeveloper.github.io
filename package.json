@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "gulp"
   },
-  "author": "Juan De la torre @codigoconjuan",
+  "author": "Mlopez by Codermex - codermex.web@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.1",

@@ -1,4 +1,4 @@
-# Portafolio v.1.0
+# Portafolio v.1.1
 
 ![Static Badge](https://img.shields.io/badge/HTML-orange)
 ![Static Badge](https://img.shields.io/badge/SASS-ed9de8)
