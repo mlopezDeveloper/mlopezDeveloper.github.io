@@ -1,9 +1,6 @@
 <h1 align="center">Portafolio v.1.1</h1>
 
 <div align="center">
-
-![codermex  Tamaño original](https://github.com/Codermex-freelance/codermex-freelance.github.io/assets/143505447/567e73cb-64cc-4ba8-9779-b49ca486d391)
-
   
 ![Static Badge](https://img.shields.io/badge/HTML-orange)
 ![Static Badge](https://img.shields.io/badge/SASS-pink)
