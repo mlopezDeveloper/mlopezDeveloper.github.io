@@ -8,6 +8,7 @@
 
 <div align="center">
   
-  ![image](https://github.com/Codermex-freelance/codermex-freelance.github.io/assets/143505447/7a69ce3c-762f-41ac-a8a9-c6bfa714eb57)
+![image](https://github.com/Codermex-freelance/codermex-freelance.github.io/assets/143505447/d4008a54-a24b-468f-9493-678ba76fab0a)
+
   
 </div>
