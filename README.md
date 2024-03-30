@@ -7,5 +7,7 @@
 ![image](https://github.com/Company-Codermex/Portafolio/assets/143505447/c1cdd572-e2c6-4916-91f1-01941db116c0)
 
 <div align="center">
+  
   ![image](https://github.com/Codermex-freelance/codermex-freelance.github.io/assets/143505447/7a69ce3c-762f-41ac-a8a9-c6bfa714eb57)
+  
 </div>
