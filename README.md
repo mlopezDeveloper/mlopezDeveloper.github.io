@@ -23,7 +23,7 @@
 3. Inicializa el proyecto.
 
     ```bash
-    sass --watch src/scss:dist/css
+    sass --watch src/scss:build/css
     ```
 
   
